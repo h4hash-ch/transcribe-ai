@@ -1,0 +1,71 @@
+:root {
+  --bg: #0f0f13;        /* Main background */
+  --card: #1a1a24;      /* Card background */
+  --border: #2a2a3a;    /* Borders */
+
+  --accent: #7c5cfc;    /* Primary purple */
+  --accent2: #a78bfa;   /* Secondary purple */
+
+  --text: #f0f0f5;      /* Main text */
+  --sub: #9090aa;       /* Subtle text */
+
+  --green: #34d399;     /* Success */
+  --red: #f87171;       /* Error */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recording {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.result-btn {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--sub);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.result-btn:hover {
+  border-color: var(--accent2);
+  color: var(--accent2);
+  background: rgba(91, 63, 212, 0.12);
+  transform: translateY(-1px);
+}
+
+.result-btn:active {
+  transform: translateY(0px);
+}
+
+.result-btn.danger {
+  border-color: rgba(255, 80, 80, 0.4);
+  color: #ff6b6b;
+}
+
+.result-btn.danger:hover {
+  border-color: #ff4d4d;
+  background: rgba(255, 77, 77, 0.12);
+  color: #ff4d4d;
+}
