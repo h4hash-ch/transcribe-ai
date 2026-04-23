@@ -140,6 +140,7 @@ BACKEND_HOST=127.0.0.1
 BACKEND_PORT=8000
 TEMP_DIR=temp
 LOG_LEVEL=info
+WHISPER_MODEL=medium
 ```
 
 **Configuration Options:**
@@ -148,6 +149,7 @@ LOG_LEVEL=info
 - `BACKEND_PORT` - Server port (default: 8000)
 - `TEMP_DIR` - Directory for temporary audio files
 - `LOG_LEVEL` - Logging level (debug, info, warning, error)
+- 'WHISPER_MODEL' - Model type offered by OpenAI (tiny, small, medium, large etc.)
 
 ### Production Deployment Notes
 
